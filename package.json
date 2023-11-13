@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeordanecarlosbatista/jcbapis.git"
+    "url": "git+https://github.com/jcb-sistemas/jcbapis.git"
   },
   "workspaces": [
     "packages/*"
@@ -19,9 +19,9 @@
   "author": "",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/jeordanecarlosbatista/jcbapis/issues"
+    "url": "https://github.com/jcb-sistemas/jcbapis/issues"
   },
-  "homepage": "https://github.com/jeordanecarlosbatista/jcbapis#readme",
+  "homepage": "https://github.com/jcb-sistemas/jcbapis#readme",
   "devDependencies": {
     "lerna": "^7.4.2"
   },
