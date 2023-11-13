@@ -1,0 +1,31 @@
+{
+  "name": "jcbapis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:all": "lerna run build",
+    "test:all": "lerna run test",
+    "publish:all": "lerna publish from-package --registry https://npm.pkg.github.com --yes --summary-file"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeordanecarlosbatista/jcbapis.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeordanecarlosbatista/jcbapis/issues"
+  },
+  "homepage": "https://github.com/jeordanecarlosbatista/jcbapis#readme",
+  "devDependencies": {
+    "lerna": "^7.4.2"
+  },
+  "engines": {
+    "node": "20.9.0"
+  }
+}
