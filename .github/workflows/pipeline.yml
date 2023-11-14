@@ -1,0 +1,32 @@
+name: cd-cd pipeline
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "**"
+
+permissions:
+  contents: read
+  deployments: write
+  id-token: write
+  packages: write
+  pages: write
+
+jobs:
+  build_test_publish:
+    runs-on: ubuntu-latest
+    container:
+      image: node:20.9.0-slim
+    env:
+      GITHUB_PACKAGES_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    steps:
+      - uses: actions/checkout@v3
+      - name: install
+        run: npm i
+      - name: build
+        run: npm run build:all
+      - name: test
+        run: npm run test:all
+      - name: publish
+        run: npm run publish:all
