@@ -9,7 +9,8 @@
   "scripts": {
     "build:all": "lerna run build",
     "test:all": "lerna run test",
-    "publish:all": "npm run publish:events",
+    "publish:all": "lerna publish from-package --registry https://npm.pkg.github.com --yes --summary-file",
+    "oldpublish:all": "npm run publish:events",
     "publish:events": "npm publish packages/events/"
   },
   "repository": {
