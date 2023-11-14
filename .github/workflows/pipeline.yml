@@ -9,6 +9,8 @@ on:
 jobs:
   build_test_publish:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PACKAGES_TOKEN: ${{secrets.GITHUB_TOKEN}}
     permissions:
       packages: write
       contents: read
@@ -27,5 +29,3 @@ jobs:
       - run: npm ci
       - name: publish
         run: npm run publish:all
-        env:
-          GITHUB_PACKAGES_TOKEN: ${{secrets.GITHUB_TOKEN}}
