@@ -10,7 +10,7 @@
     "oldpublish:all": "npm run publish:events",
     "publish:events": "npm publish packages/events/"
   },
-  "repository": "github:jcb-sistemas/jcbapis",
+  "repository": "github:jeordanecarlosbatista/jcbapis-poc.git",
   "workspaces": [
     "packages/*"
   ],
