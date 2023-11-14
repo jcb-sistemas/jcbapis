@@ -29,4 +29,6 @@ jobs:
       - name: test
         run: npm run test:all
       - name: publish
-        run: npm run publish:all
+        run: npm publish
+      # - name: publish
+      #   run: npm run publish:all
