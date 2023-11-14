@@ -1,4 +1,4 @@
-import { EventEmitter } from "../lib/events";
+import { EventEmitter } from "@lib/events";
 
 describe("EventEmitter", () => {
   it("should call event handlers correctly", () => {
