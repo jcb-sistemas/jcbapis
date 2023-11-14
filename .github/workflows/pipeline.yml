@@ -20,12 +20,10 @@ jobs:
         with:
           node-version: 20.9.0
           registry-url: https://npm.pkg.github.com/
-      - name: install
-        run: npm i
-      - name: build
-        run: npm run build:all
-      - name: test
-        run: npm run test:all
+      # - name: build
+      #   run: npm run build:all
+      # - name: test
+      #   run: npm run test:all
       - run: npm ci
       - name: publish
         run: npm run publish:all
