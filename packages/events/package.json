@@ -7,6 +7,9 @@
     ".": "./dist/index.js",
     "./testing": "./dist/testing/index.js"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.build.json && tsc-alias",
     "lint:fix": "lint --fix",
