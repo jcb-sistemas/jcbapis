@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "publishConfig": {
+    "@jcb-sistemas:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build:all": "lerna run build",
     "test:all": "lerna run test",
@@ -11,9 +14,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jcb-sistemas/jcbapis.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "workspaces": [
     "packages/*"
