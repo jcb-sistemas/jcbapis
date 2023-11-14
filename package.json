@@ -10,19 +10,13 @@
     "oldpublish:all": "npm run publish:events",
     "publish:events": "npm publish packages/events/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeordanecarlosbatista/jcb-sistemas/jcbapis.git"
-  },
+  "repository": "github:jcb-sistemas/jcbapis",
   "workspaces": [
     "packages/*"
   ],
   "keywords": [],
   "author": "",
   "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/jeordanecarlosbatista/jcb-sistemas/jcbapis/issues"
-  },
   "homepage": "https://github.com/jeordanecarlosbatista/jcb-sistemas/jcbapis#readme",
   "devDependencies": {
     "lerna": "^7.4.2"
