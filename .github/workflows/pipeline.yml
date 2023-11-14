@@ -6,16 +6,12 @@ on:
     branches:
       - "**"
 
-permissions:
-  contents: read
-  deployments: write
-  id-token: write
-  packages: write
-  pages: write
-
 jobs:
   build_test_publish:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
     steps:
       - uses: actions/checkout@v3
       - name: install
@@ -25,8 +21,7 @@ jobs:
       - name: test
         run: npm run test:all
       - run: npm ci
-      - run: npm publish
+      - name: publish
+        run: npm run publish:all
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      # - name: publish
-      #   run: npm run publish:all
+          GITHUB_PACKAGES_TOKEN: ${{secrets.GITHUB_TOKEN}}

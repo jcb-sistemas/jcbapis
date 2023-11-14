@@ -1,8 +1,8 @@
 {
   "name": "jcbapis",
+  "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "publishConfig": {
     "@jcb-sistemas:registry": "https://npm.pkg.github.com"
   },
@@ -15,9 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/jcb-sistemas/jcbapis.git"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "keywords": [],
   "author": "",
   "license": "UNLICENSED",
